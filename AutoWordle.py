@@ -1,3 +1,12 @@
+'''
+Automatic Wordle Solver
+
+Works on the Wordle archive on metzger.media. I might add support for the official Wordle website later.
+To use, run the program, switch to the wordle window and let the program run its magic.
+Note: There are some bugs. This is a very simple program for which I put the base logic together in like 10 minutes without much thought/
+
+'''
+
 import random
 import pyautogui
 import time
