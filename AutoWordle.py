@@ -13,6 +13,7 @@ import time
 import PIL.ImageGrab
 
 def change(words, guess, response):
+	words.remove(guess)
 	g=[]
 	for i in range(5):
 		if(response[i]=='g'):
@@ -89,8 +90,8 @@ for i in range(10000):
 	pyautogui.typewrite(guess,interval=0.1)
 	time.sleep(0.5)
 	pyautogui.hotkey('enter')
-	time.sleep(2)
-	response=check_response(175+(72*i))
+	time.sleep(1)
+	response=check_response(245+(72*i))
 	print(guess, response)
 	print("\n\n")
 	if(response=='ggggg'):

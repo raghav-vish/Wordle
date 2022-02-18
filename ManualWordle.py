@@ -63,7 +63,8 @@ for word in tempwords:
 		words.append(word)
 
 for i in range(10000):
-	guess=words[random.randint(0, len(words)-1)]
+	# guess=words[random.randint(0, len(words)-1)]
+	guess=input()
 	print(f'Guess : {guess}')
 	response=input('Response(B,Y,G) : ')
 	print(guess, response)
